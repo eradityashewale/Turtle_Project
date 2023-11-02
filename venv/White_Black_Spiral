@@ -1,0 +1,22 @@
+import turtle
+
+my_pen = turtle.Turtle()
+
+my_pen.speed(0)
+my_pen.color('black')
+my_pen.pensize(5)
+
+turtle.bgcolor('white')
+
+side = 400
+
+my_pen.penup()
+my_pen.goto(-200,-200)
+my_pen.pendown()
+
+#Draw the pattern
+for i in range(1,100):
+    my_pen.forward(side)
+    my_pen.left(90)
+    side-=4
+turtle.exitonclick()
